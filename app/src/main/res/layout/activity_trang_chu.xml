@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp">
+
+        <TextView
+            android:id="@+id/tvChucNang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Chuc Nang Ung Dung "
+            android:textSize="35dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:id="@+id/btTinh2so"
+            android:layout_marginTop="20px"
+            android:width="200dp"
+            android:text="Phep tinh 2 so "/>
+        <Button
+            android:id="@+id/btThongTin"
+            android:layout_marginTop="20px"
+            android:width="200dp"
+            android:text="Thong tin ca nhan"/>
+        <Button
+            android:id="@+id/btCongviec"
+            android:layout_marginTop="20px"
+            android:width="200dp"
+            android:text="Danh sach cong viec"/>
+    </TableLayout>
+</LinearLayout>

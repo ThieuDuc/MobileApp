@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ThongTin">
+<TableLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tvDangNhap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="Thông tin cá nhân"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <TextView
+        android:text="Họ tên"
+        />
+    <EditText
+        android:id="@+id/HoTen"
+        android:layout_width="47dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20px"
+        />
+    <TextView
+        android:text="Ngày Sinh"
+        />
+    <EditText
+        android:id="@+id/ngaySinh"
+        android:layout_width="47dp"
+        android:layout_height="50dp"
+       />
+    <RadioGroup
+        android:id="@+id/grbton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/GtNam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nam"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/GtNu"
+            android:text="Nữ"
+            />
+    </RadioGroup>
+    <Switch
+
+        android:id="@+id/checkSv"
+        android:text="La sinh vien"
+        />
+    <TextView
+        android:text="Kha nang lap trinh"
+        />
+    <CheckBox
+        android:id="@+id/checkC"
+        android:text="C"
+        />
+    <CheckBox
+        android:id="@+id/checkJS"
+        android:text="JavaScript"
+        />
+    <CheckBox
+        android:id="@+id/checkCthang"
+        android:text="C#"
+        />
+    <Spinner
+        android:id="@+id/spnCategory"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btShow"
+        android:text="Hien Thi"
+        />
+</TableLayout>
+</LinearLayout>

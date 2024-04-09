@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <EditText
+                android:id="@+id/editSoA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:inputType="numberDecimal"
+                android:hint="Nhập số A"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/editSoB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editSoA"
+                android:layout_marginBottom="8dp"
+                android:inputType="numberDecimal"
+                android:hint="Nhập số B"/>
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/btCong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:onClick="performMultiplication"/>
+            <Button
+                android:id="@+id/btTru"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:onClick="performDivision"/>
+
+            <Button
+                android:id="@+id/btNhan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="performAddition"
+                android:text="*" />
+
+            <Button
+                android:id="@+id/btChia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="performSubtraction"
+                android:text="/" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/textViewResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Kết Quả :"
+                />
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewResult"
+                android:layout_marginTop="16dp"
+                android:text="....."
+                android:textSize="18sp"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
